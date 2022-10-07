@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+<style>
+    body {
+        background: blue;
+        color: white;
+        font: normal 18pt arial;
+    }
+</style>
+</head>
+<body>
+    <h1>Iniciando estudo com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div>Click em mim</div>
+    <div name="meuNome">Eros Ravier</div>
+    <div class="meuNumero">86998521856</div>
+    <div id="meuCpf">063.952.503-29</div>    
+    <script>
+        var num = window.document.querySelector('div#meuCpf') 
+
+        num.style.color = 'black'
+        num.innerText = 'Estou aqui'
+        
+        var corpo = window.document.body
+        var p1 = window.document.getElementsById('p')[0]
+        var nome = window.document.getElementsByName('meuNome')
+        window.document.write( 'Esta escrito assim: ' + p1.innerText)
+        d.style.background = 'green'
+        //d.innerText = 'Estou aguardando...'
+
+/*
+p1.style.font = 'normal 50pt arial black'
+p1.style.color = 'green'//posso mudar qual quer elemento apenas selecionando aqui.
+
+corpo.style.background = 'black'*/
+
+
+
+
+
+</script>
+</body>
+<html> 
